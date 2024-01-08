@@ -1,3 +1,5 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,44 +20,44 @@
 
       <label for="last-name">Last Name:</label>
       <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required />
-    
 
-    <label for="address">Address:</label>
-    <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
 
-    <label for="pincode">Pincode:</label>
-    <input type="text" id="pincode" name="pincode" placeholder="Enter your pincode" required>
+      <label for="pincode">Pincode:</label>
+      <input type="text" id="pincode" name="pincode" placeholder="Enter your pincode" required>
 
-    <label for="gender">Gender:</label>
-    <div class="gender-options">
-      <input type="radio" id="male" name="gender" value="male" required>
-      <label for="male">Male</label>
+      <label for="gender">Gender:</label>
+      <div class="gender-options">
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
 
-      <input type="radio" id="female" name="gender" value="female" required>
-      <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
 
-      <input type="radio" id="other" name="gender" value="other" required>
-      <label for="other">Other</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+      </div>
+
+      <label for="food">Choice of Food (Select at least 2):</label>
+      <select id="food" name="food" multiple required>
+        <option value="idly">Idly</option>
+        <option value="dosa">Dosa</option>
+        <option value="pongal">Pongal</option>
+        <option value="poori">Poori</option>
+        <option value="rava">Rava</option>
+      </select>
+      <p id="food-error" class="error-message"></p>
+      <div id="selected-food"></div>
+
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" placeholder="Enter your state" required/>
+
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country" placeholder="Enter your country" required/>
+
+      <button type="button" id="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
     </div>
-
-    <label for="food">Food:</label>
-    <select id="food" name="food" required>
-      <option value="" disabled selected hidden>Select your food</option>
-      <option value="idly">Idly</option>
-      <option value="dosa">Dosa</option>
-      <option value="pongal">Pongal</option>
-      <option value="poori">Poori</option>
-      <option value="rava">Rava</option>
-    </select>
-
-    <label for="state">State:</label>
-    <input type="text" id="state" name="state" placeholder="Enter your state" required/>
-
-    <label for="country">Country:</label>
-    <input type="text" id="country" name="country" placeholder="Enter your country" required/>
-
-    <button type="button" id="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
-  </div>
   </form>
 
   <!-- table to append form data -->
