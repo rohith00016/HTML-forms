@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1 id="title">HTML Form</h1>
+  <!-- form for user -->
+  <p id="description">Fill all the fields</p>
+  <form id="form">
+    <div class="form-group">
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required />
+
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required />
+    
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+
+    <label for="pincode">Pincode:</label>
+    <input type="text" id="pincode" name="pincode" placeholder="Enter your pincode" required>
+
+    <label for="gender">Gender:</label>
+    <div class="gender-options">
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" required>
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="other" required>
+      <label for="other">Other</label>
+    </div>
+
+    <label for="food">Food:</label>
+    <select id="food" name="food" required>
+      <option value="" disabled selected hidden>Select your food</option>
+      <option value="idly">Idly</option>
+      <option value="dosa">Dosa</option>
+      <option value="pongal">Pongal</option>
+      <option value="poori">Poori</option>
+      <option value="rava">Rava</option>
+    </select>
+
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state" placeholder="Enter your state" required/>
+
+    <label for="country">Country:</label>
+    <input type="text" id="country" name="country" placeholder="Enter your country" required/>
+
+    <button type="button" id="submit" class="btn btn-primary" onclick="submitForm()">Submit</button>
+  </div>
+  </form>
+
+  <!-- table to append form data -->
+  <table id="userTable" class="table">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Address</th>
+        <th>Pincode</th>
+        <th>Gender</th>
+        <th>Food</th>
+        <th>State</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
